@@ -1,0 +1,19 @@
+body {
+    background: #fff;
+    color: #fff;
+}
+h1, h2{
+    text-align: center;
+}
+img{
+    margin:0 auto;
+    display: block;
+}
+#root, #root2{
+    background: #222222;
+    padding: 15px;
+}
+#testApp{
+    background: #dd1b16;
+    padding: 15px;
+}
