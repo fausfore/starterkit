@@ -1,13 +1,9 @@
-import { module } from 'angular';
-
 import { testApp } from './app.component'
 
 interface Hello {
     first:string
     last:string
 }
-
-//const testApp2 = module('testApp2', [])   
 
 class appController {
     hello = {}
@@ -19,4 +15,4 @@ class appController {
     }
 }
 
-testApp.controller('appController',appController);     
+testApp.controller('appController',appController)     

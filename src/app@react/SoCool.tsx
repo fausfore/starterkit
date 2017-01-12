@@ -12,7 +12,7 @@ class Hello extends React.Component<HelloProps, undefined> {
             <div>
                 <h1>Hello from {this.props.framework} App with Webpack</h1>
                 <h2>With {this.props.compiler} !</h2>
-                <img src="/public/images/react.png"/>
+                <img src="../../public/images/react.png"/>
             </div>
         )
     }

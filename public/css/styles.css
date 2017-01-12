@@ -8,6 +8,7 @@ h1, h2{
 img{
     margin:0 auto;
     display: block;
+    max-width:320px;
 }
 #root, #root2{
     background: #222222;

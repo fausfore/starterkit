@@ -8,7 +8,7 @@ class HelloWorld extends React.Component {
         <div>
             <h1>Hello from React App with Webpack</h1>
             <h2>With Ecmascript 2015 !</h2>
-            <img src="/public/images/react.png"/>
+            <img src="../../public/images/react.png"/>
         </div>
     ) 
   }
