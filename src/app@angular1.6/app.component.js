@@ -1,36 +1,14 @@
-import uiRouter from 'angular-ui-router';
+import testApp from './app.module'
 
-
-export const testApp = angular.module('testApp', [uiRouter])   
-
-testApp.controller('testCrt',testCrt);
-
-testCrt.$inject = ['$scope']
-
-function testCrt($scope){
-    this.hello = 'Hello from Angular 1.6 App with Webpack'
-    this.world = 'With Ecmascript 2015 !'
+class testCrt{
+    constructor(){
+        this.hello = 'Hello from Angular 1.6 App with Webpack'
+        this.world = 'With Ecmascript 2015 !'
+    }
 }
 
-testApp.config(router);
+export default testCrt
 
-router.$inject = ['$stateProvider']
+testApp.controller('testCrt', testCrt);
 
-function router($stateProvider){
-    const helloState = {
-        name: 'hello',
-        url: '/hello',
-        template: require("./hello.html"),
-        controller: 'testCrt as test1'
-    }
 
-  const aboutState = {
-        name: 'about',
-        url: '/about',
-        template: require("./about.html"),
-        controller: 'appController as test2'
-    }
-
-    $stateProvider.state(helloState);
-    $stateProvider.state(aboutState);
-}

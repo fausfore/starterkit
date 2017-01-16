@@ -1,4 +1,4 @@
-import { testApp } from './app.component'
+import testApp from './app.module'
 
 interface Hello {
     first:string
@@ -9,10 +9,12 @@ class appController {
     hello = {}
     constructor() {
         this.hello = {
-                first:'Hello from Angular 1.6 App with Webpack',
-                last:'With Typescript'
+            first:'Hello from Angular 1.6 App with Webpack',
+            last:'With Typescript'
         }
     }
 }
 
-testApp.controller('appController',appController)     
+
+testApp.controller('appController', appController )    
+

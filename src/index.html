@@ -8,16 +8,20 @@
   </head>
   <body>
 
+    <div ng-app="testApp" class="angularHeader">
+      <nav>
+        <a ui-sref="hello" ui-sref-active="active">ES6</a>
+        <a ui-sref="about" ui-sref-active="active">Typescript</a>
+      </nav>
+      <ui-view></ui-view>
+    </div>
+
     <my-app>Loading Angular 2 ...</my-app>
 
     <div id="root">Loading React ES6 ...</div>
 
     <div id="root2">Loading React Typescript ...</div>
 
-    <div ng-app="testApp">
-      <a ui-sref="hello" ui-sref-active="active">ES6</a>
-      <a ui-sref="about" ui-sref-active="active">Typescript</a>
-      <ui-view></ui-view>
-    </div>
+    
   </body>
 </html>

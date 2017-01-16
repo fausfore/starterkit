@@ -5,6 +5,7 @@ import './app@react/Hello';
 import './app@react/SoCool';
 import './app@angular1.6/app.component';
 import './app@angular1.6/app.component2';
+import './app@angular1.6/app.module';
 
 if (process.env.ENV === 'production') {
   enableProdMode();
