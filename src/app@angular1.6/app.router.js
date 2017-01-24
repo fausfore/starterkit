@@ -1,18 +1,11 @@
+import { helloComponent } from './hello/hello.component'
+import { aboutComponent } from './about/about.component'
+
 const router = ($stateProvider) => {
 
     const states = [
-        {
-            name: 'hello',
-            url: '/hello',
-            template: require("./hello.html"),
-            controller: 'testCrt as test1'
-        },
-        {
-            name: 'about',
-            url: '/about',
-            template: require("./about.html"),
-            controller: 'appController as test2'
-        }
+        aboutComponent,
+        helloComponent
     ]
 
     // Loop over the state definitions and register them

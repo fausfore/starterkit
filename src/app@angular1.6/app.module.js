@@ -1,8 +1,9 @@
 import uiRouter from 'angular-ui-router';
 import router from './app.router'
+import { aboutComponent } from './about/about.component'
+import { helloComponent } from './hello/hello.component'
 
-const testApp = angular.module('testApp', [uiRouter])
-
-testApp.config(router);
-
-export default testApp
+angular.module('testApp', [uiRouter])
+    .config(router)
+    .component('aboutComponent', aboutComponent)
+    .component('helloComponent', helloComponent)

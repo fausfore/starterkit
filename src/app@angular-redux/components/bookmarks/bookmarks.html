@@ -1,0 +1,10 @@
+<div class="bookmarks">
+  <div ng-repeat="bookmark in bookmarksListCtrl.bookmarks
+    | filter:{category:bookmarksListCtrl.currentCategory.name}">
+    ...
+  </div>
+  <div ng-if="bookmarksListCtrl.currentCategory.name">
+    ...
+  </div>
+  ...
+</div>
