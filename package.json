@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "webpack-dev-server --inline --progress --port 8080",
-    "build": "rimraf dist && webpack --config config/webpack/webpack.prod.js --progress --profile --bail"
+    "start": "./node_modules/.bin/webpack-dev-server --inline --progress --port 8080",
+    "build": "rimraf dist && ./node_modules/.bin/webpack --config config/webpack/webpack.prod.js --progress --profile --bail"
   },
   "repository": {
     "type": "git",
